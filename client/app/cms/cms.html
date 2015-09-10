@@ -1,0 +1,34 @@
+<div id="app">
+  <div>
+    <div>
+      <div class="content">
+        <div class="content--header">
+          <div class="content--header--item is-clickable"></div>
+        </div>
+        <div class="content--main state-is-welcome">
+          <div>
+            <div class="content--inner project-is-web">
+              <div class="content--inner-text">
+                The problem I solved: If someone from HR or Marketing wanted to push a new page for a job post or an
+                event to the company's website, they would have to write up the post, send that to someone else to format
+                it in HTML, and then that person sends it to someone else to deploy to the production server.
+              </div>
+              <div class="content--inner-text">
+                How I solved it: An administrative interface with user login and admin login. Someone in HR or Marketing
+                writes the post in a WYSIWYG editor(Aloha Editor) or Markdown format, they hit submit and the administrator
+                is notified, the administrator reviews the post, hits publish, and the page is pushed to the website.
+              </div>
+              <div class="content--inner-text">
+                The admin interface uses Angular for the front-end and Node/Express on the back-end with MongoDB. A
+                static-site generator(Metalsmith) is used because the website pages are pushed to is static. Metalsmith
+                allowed me to easily create templates for different categories of posts.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-include="'components/menu/menu.html'"></div>
+    <div ng-include="'components/footer/footer.html'"></div>
+  </div>
+</div>

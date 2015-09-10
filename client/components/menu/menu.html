@@ -1,0 +1,23 @@
+<div class="menu" ng-controller="MenuCtrl">
+  <div class="menu--box">
+    <div class="menu--box--title">Projects</div>
+    <div class="menu--box--item is-underlined is-clickable" ng-repeat="project in projects">
+      <a ng-href="{{project.Link}}">{{project.Project}}</a>
+    </div>
+  </div>
+  <div class="menu--box">
+    <div class="menu--box--title">What I Do</div>
+    <div class="menu--box--item" ng-repeat="skill in whatIDo">{{skill}}</div>
+  </div>
+  <div class="menu--box">
+    <div class="menu--box--title">What I Use</div>
+    <div class="menu--box--item" ng-repeat="framework in whatIUse">{{framework}}</div>
+  </div>
+  <div class="menu--box">
+    <div class="menu--box--title">Contact</div>
+    <div class="menu--box--item">
+      Email: <a href="mailto:travispett@gmail.com" class="is-clickable is-underlined">travispett@gmail.com</a>
+    </div>
+    <div class="menu--box--item">Mobile: 540.424.1658</div>
+  </div>
+</div>
