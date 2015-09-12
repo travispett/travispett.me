@@ -12,11 +12,11 @@ angular.module('portfolioApp')
       Project: 'CMS - Steel Thread Software',
       Link: '/cms'
     }, {
+      Project: 'virginiacosigner.com',
+      Link: '/vacs'
+    }, {
       Project: 'Anonymous Messaging App',
       Link: '/message'
-    }, {
-      Project: 'Other Project 2',
-      Link: '/proj2'
     }];
     $scope.whatIDo = ['Front-end Development', 'Back-end Development', 'Mobile Development'];
     $scope.whatIUse = ['AngularJS', 'NodeJS', 'Javascript', 'Java', 'Python', 'Ruby'];
