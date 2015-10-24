@@ -9,14 +9,15 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
  */
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 // Component styles are injected through grunt
 // injector
+@import 'blog/blog.scss';
 @import 'cms/cms.scss';
 @import 'home/home.scss';
 @import 'message/message.scss';
@@ -26,10 +27,14 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 
 @font-face {
   font-family: 'sofia';
-  src: url("/assets/fonts/SofiaProLight.otf") format("opentype"); }
+  src: url("/assets/fonts/SofiaProLight.otf") format("opentype");
+}
+
 @font-face {
   font-family: 'cn';
-  src: url("/assets/fonts/Franklin-Gothic-Medium-Regular.ttf") format("truetype"); }
+  src: url("/assets/fonts/Franklin-Gothic-Medium-Regular.ttf") format("truetype");
+}
+
 .f-base {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -42,45 +47,61 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
   justify-content: space-between;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+}
 
 * {
-  font-family: 'sofia','cn';
+  font-family: 'sofia', 'cn';
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+
 *::-moz-selection {
   color: #6267d0;
-  background: transparent; }
+  background: transparent;
+}
+
 *::selection {
   color: #6267d0;
-  background: transparent; }
+  background: transparent;
+}
 
 body {
   color: #2A2B2E;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+}
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+}
+
 a:hover, a:focus, a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .is-colored {
   color: #6267d0;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .is-clickable {
-  cursor: pointer; }
+  cursor: pointer;
+}
+
 .is-clickable:hover {
   color: #6267d0;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .is-underlined {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .container {
   display: -webkit-flex;
@@ -95,12 +116,14 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100vw; }
+  width: 100vw;
+}
 
 .container--item, .content--main, .menu, .footer {
   width: 100vw;
   padding: 64px 48px 48px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .content--main {
   display: -webkit-flex;
@@ -117,11 +140,14 @@ img {
   align-items: center;
   min-height: 60vh;
   padding-top: 80px;
-  background-color: #eef0f2; }
+  background-color: #eef0f2;
+}
+
 .content--main.state-is-welcome {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
 
 .content--header {
   display: -webkit-flex;
@@ -143,10 +169,12 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  padding: 32px 48px; }
+  padding: 32px 48px;
+}
 
 .content--header--item {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .content--header--items {
   display: -webkit-flex;
@@ -160,11 +188,16 @@ img {
   justify-content: flex-start;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+}
+
 .content--header--items.on-the-right > .content--header--item {
-  margin-left: 16px; }
+  margin-left: 16px;
+}
+
 .content--header--items.on-the-left > .content--header--item {
-  margin-right: 16px; }
+  margin-right: 16px;
+}
 
 .content--inner {
   display: -webkit-flex;
@@ -178,26 +211,32 @@ img {
   justify-content: flex-start;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .content--inner.project-is-web .content--image {
-  max-width: 800px; }
+  max-width: 800px;
+}
 
 .content--inner.project-is-mobile .content--image {
-  max-width: 400px; }
+  max-width: 400px;
+}
 
 .content--inner-text {
   max-width: 600px;
   margin-bottom: 24px;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+}
 
 .content--image {
-  margin: 24px 0; }
+  margin: 24px 0;
+}
 
 .content--welcome {
   font-size: 32px;
-  max-width: 50vw; }
+  max-width: 50vw;
+}
 
 .menu {
   display: -webkit-flex;
@@ -212,7 +251,8 @@ img {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #fdfffc; }
+  background-color: #fdfffc;
+}
 
 .menu--box {
   display: -webkit-flex;
@@ -228,19 +268,24 @@ img {
   -ms-flex-align: start;
   align-items: flex-start;
   margin-right: 80px;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+}
 
 .menu--box--title {
   font-size: 24px;
   padding-bottom: 16px;
   border-bottom: 2px solid #181f1c;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+}
 
 .menu--box--item {
   font-size: 16px;
-  padding: 8px 0; }
+  padding: 8px 0;
+}
+
 .menu--box--item.is-paragraph {
-  max-width: 300px; }
+  max-width: 300px;
+}
 
 .footer {
   display: -webkit-flex;
@@ -257,7 +302,8 @@ img {
   align-items: center;
   height: 10vh;
   background-color: #181f1c;
-  color: #A6A2A2; }
+  color: #A6A2A2;
+}
 
 .instagram--feed {
   display: -webkit-flex;
@@ -273,19 +319,25 @@ img {
   -ms-flex-align: center;
   align-items: center;
   width: 100vw;
-  height: 20vw; }
+  height: 20vw;
+}
 
 .instagram--img {
-  width: 20vw; }
+  width: 20vw;
+}
 
 .language.is-active {
   color: #6267d0;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 800px) {
   .content--inner {
     width: 100%;
-    min-width: 0; } }
+    min-width: 0;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .hide-if-mobile {
     display: none;
@@ -295,11 +347,14 @@ img {
   }
   .content--inner {
     width: 100%;
-    min-width: 0; }
+    min-width: 0;
+  }
 
   .content--inner.project-is-web .content--image,
   .content--inner.project-is-mobile .content--image {
-    max-width: 100%; } }
+    max-width: 100%;
+  }
+}
 
 .linkedin-logo {
   height: 31px;

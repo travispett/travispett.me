@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('portfolioApp')
-  .controller('MenuCtrl', function($scope, $location) {
+  .controller('MenuCtrl', function($scope) {
     $scope.projects = [{
       Project: 'travispett.me - Angular',
       Link: '/'
@@ -19,5 +19,5 @@ angular.module('portfolioApp')
       Link: '/message'
     }];
     $scope.whatIDo = ['Front-end Development', 'Back-end Development', 'Mobile Development'];
-    $scope.whatIUse = ['AngularJS', 'NodeJS', 'Javascript', 'Java', 'Python', 'Ruby'];
+    $scope.whatIUse = ['AngularJS', 'NodeJS', 'JavaScript', 'Java', 'Python', 'Ruby'];
   });
